@@ -1,0 +1,64 @@
+body {
+  padding: 1em 2em;
+}
+/* 
+================================
+A sample transition.
+Click on the large ball on the left to see the animation.
+*/
+
+.anim {
+height: 300px;
+}
+
+.anim:active .ball-one {
+  left: 110px;
+  transition: left 500ms ease-in;
+}
+
+/* 
+================================
+Your code here! 
+Make the small ball on the right roll to the right when the large one hits it.
+
+*/
+.anim:active .ball-two {
+  transition: 500ms ease-in-out 500ms ;
+  margin-left: 200px;
+}
+  /* Hint: manipulate margin-left to roll it, just like with the ball-one above. */
+
+  /* Double hint: Don't forget about transition-delay! */
+
+/* 
+================================
+Necessary CSS Below-- no need to edit */
+
+.ball-one {
+  background: #ff97C0;
+  border-radius: 50%;
+  position: absolute; top: 0px; left: 00px;
+  width: 200px; height: 200px;
+}
+
+.ball-two {
+  background: #0097C0;
+  border-radius: 50%;
+  position: absolute; top: 100px; left: 300px;
+  width: 100px; height: 100px;
+}
+
+
+/* 
+Excersice 2 */
+.square {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-duration: 2000ms;
+}
+
+.square:hover {
+  transition: width 2000ms ease-in-out;
+  width: 300px;
+}
